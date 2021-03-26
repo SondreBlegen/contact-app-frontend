@@ -1,0 +1,22 @@
+<div class="list">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of data">
+                <td scope="row"> <a [routerLink]="'/' + i.id">{{i.id}}</a></td>
+                <td>{{i.firstname}}</td>
+                <td>{{i.lastname}}</td>
+                <td>{{i.phonenumber}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
